@@ -1,25 +1,34 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from 'react-router-dom';
+import {SideNav} from "./Componentes/SideNav";
+import {Lobby} from "./Paginas/Lobby"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <Router >
+          <meta name={"viewport"} content={"width=device-width, initial-scale=1.0"}/>
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+          <Switch>
+              <Route path="/">
+                  <div style={{backgroundColor: "rgb(35, 35, 46)",
+                      height: "657px",
+                      width: "100%",
+                      size: "auto",
+                      position: "absolute"}}>
+                      <Lobby/>
+                  </div>
+
+              </Route>
+          </Switch>
+      </Router>
   );
 }
 
