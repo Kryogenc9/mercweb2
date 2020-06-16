@@ -43,8 +43,9 @@ export default class Chart extends Component {
                 mozBorderRadius: "10px 10px 10px 10px",
                 webkitBorderRadius: "10px 10px 10px 10px",
                 border: "0px solid #000000"}}>
+                <h3>Ventas</h3>
                <Line options={{responsive:true}} data={this.state.data} style={{Color:"#4169E1"}}/>
-               <h3>Ventas</h3>
+
             </div>
         );
     }

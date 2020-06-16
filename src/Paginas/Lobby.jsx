@@ -4,6 +4,7 @@ import Chart from "../Componentes/GraficoLineas";
 import GraficoBarras from "../Componentes/GraficoBarras";
 import {render} from "react-dom";
 import LogOut from "../Componentes/LogOut"
+import Login from "./Login";
 export function Lobby() {
     return(
         <div style={{
@@ -41,7 +42,7 @@ export function Lobby() {
                 left: "37%",
                 right: "auto"
             }}>
-                <LogOut/>
+                <LogOut link={<Login/>}/>
             </div>
         </div>
 

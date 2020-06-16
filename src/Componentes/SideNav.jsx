@@ -5,6 +5,7 @@ import core from "@fortawesome/fontawesome-svg-core"
 import solid from "@fortawesome/free-solid-svg-icons"
 import reactfont from "@fortawesome/react-fontawesome"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {Link} from "react-router-dom";
 
 
 
@@ -16,7 +17,7 @@ export function SideNav() {
                     <ul>
                         <li className={a.Logo}> MercWeb </li>
                         <div className={a.Items}>
-                            <li><FontAwesomeIcon icon={"home"}/><a href={"#"}>Home</a></li>
+                            <li><FontAwesomeIcon icon={"home"}/><a><Link to={"/"}></Link></a></li>
                             <li><FontAwesomeIcon icon={"cash-register"}/><a href={"#"}>Ofertas</a></li>
                             <li><FontAwesomeIcon icon={"dollar-sign"}/><a href={"#"}>Ventas</a></li>
                             <li><FontAwesomeIcon icon={"star"}/><a href={"#"}>Ingresar Productos</a></li>

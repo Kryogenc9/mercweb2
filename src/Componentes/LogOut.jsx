@@ -1,6 +1,7 @@
 import React from "react";
 import Login from "../Paginas/Login";
 import a from "../CSS/SideNav.module.css"
+import {Link} from "react-router-dom";
 function OnClick() {
 
 }
@@ -8,7 +9,8 @@ export default function LogOut() {
 
     return(
         <div>
-            <button type={"submit"} value={<Login/>} style={{
+            <Link to={"/"}>
+            <button type={"submit"} style={{
                 position: "relative",
                 top: "100%",
                 bottom: "auto",
@@ -21,7 +23,7 @@ export default function LogOut() {
 
 
             }}><label>Cerrar Sesión</label> </button>
-
+            </Link>
 
         </div>
     );
