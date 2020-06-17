@@ -2,7 +2,17 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 // import your icons
-import {faCog,faBarcode,faSearch,faHome, faCashRegister, faDollarSign, faStar,faCode} from '@fortawesome/free-solid-svg-icons';
+import {
+    faCog,
+    faBarcode,
+    faSearch,
+    faHome,
+    faCashRegister,
+    faDollarSign,
+    faStar,
+    faCode,
+    faWindowClose
+} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
     faHome,//casa
@@ -11,6 +21,7 @@ library.add(
     faSearch,//Busqueda
     faStar,//NuevoProducto
     faBarcode,//CambioDeCodigo
-    faCog //Config
+    faCog,//Config
+    faWindowClose//EliminarProducto
 
 );
